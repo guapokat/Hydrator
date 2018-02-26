@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tRY-Fj-SgV">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Bold.ttf">
+            <string>Dosis-Bold</string>
+        </array>
+        <array key="Dosis-Light.ttf">
+            <string>Dosis-Light</string>
+        </array>
+        <array key="Dosis-Regular.ttf">
+            <string>Dosis-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About View Controller-->
+        <scene sceneID="yTi-lx-Rcs">
+            <objects>
+                <viewController id="96H-Rq-ddw" customClass="AboutViewController" customModule="Hydrator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X7q-da-QC5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" image="Hydrator Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zgn-T1-XgI">
+                                <rect key="frame" x="80" y="97" width="254" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="About:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSs-No-Bks">
+                                <rect key="frame" x="182.66666666666666" y="407" width="48.666666666666657" height="24"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" red="0.95249706509999998" green="0.96466654539999996" blue="0.9728901982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.27428621050000002" green="0.27338421340000002" blue="0.33139997719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ES1-2r-LD2" userLabel="Social Media">
+                                <rect key="frame" x="119" y="659" width="176" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKw-pf-mj1">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <state key="normal" image="Instagram"/>
+                                        <connections>
+                                            <action selector="instagramPressed:" destination="96H-Rq-ddw" eventType="touchUpInside" id="R7v-fS-G0g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6l-qO-0Ug">
+                                        <rect key="frame" x="47" y="0.0" width="35" height="35"/>
+                                        <state key="normal" image="Twitter"/>
+                                        <connections>
+                                            <action selector="twitterPressed:" destination="96H-Rq-ddw" eventType="touchUpInside" id="6OD-up-9bS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyi-ax-PFu">
+                                        <rect key="frame" x="94" y="0.0" width="35" height="35"/>
+                                        <state key="normal" image="Linkedin"/>
+                                        <connections>
+                                            <action selector="linkedInPressed:" destination="96H-Rq-ddw" eventType="touchUpInside" id="cfl-wz-XMF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW4-YP-6mE">
+                                        <rect key="frame" x="141" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="ear-JL-IVr"/>
+                                            <constraint firstAttribute="height" constant="35" id="ymJ-dE-JrD"/>
+                                        </constraints>
+                                        <state key="normal" image="Github"/>
+                                        <connections>
+                                            <action selector="gitHubPressed:" destination="96H-Rq-ddw" eventType="touchUpInside" id="ibu-oc-9Wg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6h-Xv-kdW">
+                                <rect key="frame" x="12" y="437" width="390" height="200"/>
+                                <color key="backgroundColor" red="0.249306947" green="0.4413391948" blue="0.70284622910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="XJa-zL-pZg"/>
+                                </constraints>
+                                <string key="text">    It is generally accepted that most humans should consume 64 oz of water per day.  Ensuring general hydration standards. However illness, age, and pregnancy can alter this recommendation.  Please consult a trained medical professional for specific recommendations for your health. This app is a daily reminder for you to get/stay hydrated. There are massive benefits of staying hydrated. This app is here for you to find those out! Please feel free to leave any feedback or feature requests, and stay hydrated!</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1325856447" green="0.72268468139999997" blue="0.8375255466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d6h-Xv-kdW" firstAttribute="centerX" secondItem="X7q-da-QC5" secondAttribute="centerX" id="9fh-uh-utL"/>
+                            <constraint firstItem="Zgn-T1-XgI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Zwm-LS-7ph" secondAttribute="leading" constant="80" id="AIV-Z8-JMT"/>
+                            <constraint firstItem="Zgn-T1-XgI" firstAttribute="centerX" secondItem="X7q-da-QC5" secondAttribute="centerX" id="DG2-nM-1ZX"/>
+                            <constraint firstItem="Zwm-LS-7ph" firstAttribute="bottom" secondItem="ES1-2r-LD2" secondAttribute="bottom" constant="42" id="F0x-3k-qlI"/>
+                            <constraint firstItem="Zwm-LS-7ph" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zgn-T1-XgI" secondAttribute="trailing" constant="80" id="Ghi-Lq-JTh"/>
+                            <constraint firstItem="d6h-Xv-kdW" firstAttribute="leading" secondItem="Zwm-LS-7ph" secondAttribute="leading" constant="12" id="Jum-1m-EZ4"/>
+                            <constraint firstItem="ES1-2r-LD2" firstAttribute="centerX" secondItem="X7q-da-QC5" secondAttribute="centerX" id="KfX-c7-ATi"/>
+                            <constraint firstItem="ES1-2r-LD2" firstAttribute="top" secondItem="d6h-Xv-kdW" secondAttribute="bottom" constant="22" id="MFX-vW-9Ez"/>
+                            <constraint firstItem="d6h-Xv-kdW" firstAttribute="top" secondItem="vSs-No-Bks" secondAttribute="bottom" constant="6" id="RPc-YO-mUI"/>
+                            <constraint firstItem="Zwm-LS-7ph" firstAttribute="trailing" secondItem="d6h-Xv-kdW" secondAttribute="trailing" constant="12" id="YMi-Pb-zB1"/>
+                            <constraint firstItem="Zgn-T1-XgI" firstAttribute="top" secondItem="Zwm-LS-7ph" secondAttribute="top" constant="33" id="ndl-O0-zVJ"/>
+                            <constraint firstItem="vSs-No-Bks" firstAttribute="centerX" secondItem="X7q-da-QC5" secondAttribute="centerX" id="toG-ys-QwL"/>
+                            <constraint firstItem="vSs-No-Bks" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Zgn-T1-XgI" secondAttribute="bottom" constant="6" id="y9D-We-oWD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zwm-LS-7ph"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXK-O8-WbX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="556.52173913043487" y="657.88043478260875"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="Hydrator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="Hydrator Logo" translatesAutoresizingMaskIntoConstraints="NO" id="YwC-12-m2y">
+                                <rect key="frame" x="79" y="85" width="256" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="250" id="X8a-LX-6eI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="HYDRATOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="sst-zM-Ela">
+                                <rect key="frame" x="123.66666666666667" y="350" width="166.66666666666663" height="48"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="37"/>
+                                <color key="textColor" red="0.95249706506729126" green="0.96466654539108276" blue="0.97289019823074341" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.27428621053695679" green="0.2733842134475708" blue="0.33139997720718384" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-pw-4zd" userLabel="Text Fields">
+                                <rect key="frame" x="66" y="406" width="282" height="66"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftA-lV-h8S">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="E4Z-zQ-PHh"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XIg-SW-5eU">
+                                        <rect key="frame" x="0.0" y="36" width="282" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="XVt-Cn-w0l"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSF-0o-Tfy" userLabel="About">
+                                <rect key="frame" x="16" y="698" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="Cqf-Tw-85V"/>
+                                    <constraint firstAttribute="width" constant="22" id="T30-XA-ysx"/>
+                                </constraints>
+                                <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="96H-Rq-ddw" kind="show" id="2if-gd-rVz"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="1000" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="D9k-DD-DBd" userLabel="Login Stack">
+                                <rect key="frame" x="66" y="508.00000000000006" width="282" height="177.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9gb-Ye-6Xm" userLabel="Buttons">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="38.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egR-Pt-bCi">
+                                                <rect key="frame" x="0.0" y="2.3333333333333144" width="131" height="34"/>
+                                                <color key="backgroundColor" red="0.26762324570000001" green="0.78805088999999995" blue="0.86873191599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                <state key="normal" title="Register">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" red="0.27428621050000002" green="0.27338421340000002" blue="0.33139997719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="zu4-LL-dBO" kind="show" id="7xS-3j-78S"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Krf-KG-AHO">
+                                                <rect key="frame" x="151" y="2.3333333333333144" width="131" height="34"/>
+                                                <color key="backgroundColor" red="0.0" green="0.55973279480000004" blue="0.060988165439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                <state key="normal" title="Login">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" red="0.27428621050000002" green="0.27338421340000002" blue="0.33139997719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9wG-WV-JGC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" text="-- OR --" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BvU-rN-3EL">
+                                        <rect key="frame" x="0.0" y="46.333333333333371" width="282" height="38.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9s-Pf-eVL">
+                                        <rect key="frame" x="0.0" y="93" width="282" height="38.333333333333343"/>
+                                        <color key="backgroundColor" red="0.85008615259999998" green="0.16712719200000001" blue="0.071567378939999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="Google">
+                                            <color key="titleColor" red="0.99991279840000002" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.27428621050000002" green="0.27338421340000002" blue="0.33139997719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customGoogleLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="luY-SW-ETw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-ah-bpY">
+                                        <rect key="frame" x="0.0" y="139.33333333333337" width="282" height="38.333333333333343"/>
+                                        <color key="backgroundColor" red="0.249306947" green="0.4413391948" blue="0.70284622910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="Facebook">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.27428621050000002" green="0.27338421340000002" blue="0.33139997719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customFBLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xp6-7P-Rz5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177.66999999999999" id="LaE-SA-C72"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1326604187" green="0.72059023379999998" blue="0.83835005760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YwC-12-m2y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="2jZ-Kf-H1A"/>
+                            <constraint firstItem="sst-zM-Ela" firstAttribute="top" secondItem="YwC-12-m2y" secondAttribute="bottom" constant="15" id="CjS-I8-Z5H"/>
+                            <constraint firstItem="D9k-DD-DBd" firstAttribute="top" secondItem="hAn-pw-4zd" secondAttribute="bottom" constant="36" id="CzH-HI-A3r"/>
+                            <constraint firstItem="hAn-pw-4zd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="EHq-34-o7n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YwC-12-m2y" secondAttribute="trailing" constant="79" id="FPd-lZ-pWA"/>
+                            <constraint firstItem="YwC-12-m2y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="21" id="QRQ-sS-2P7"/>
+                            <constraint firstItem="hAn-pw-4zd" firstAttribute="top" secondItem="sst-zM-Ela" secondAttribute="bottom" constant="8" id="QxW-Fh-rz7"/>
+                            <constraint firstItem="D9k-DD-DBd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="VU8-V6-XxW"/>
+                            <constraint firstItem="sst-zM-Ela" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WDR-z1-Kcb"/>
+                            <constraint firstItem="WSF-0o-Tfy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WcX-JM-bUM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D9k-DD-DBd" secondAttribute="trailing" constant="66" id="XYf-hy-VN1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hAn-pw-4zd" secondAttribute="trailing" constant="66" id="le6-K6-xSg"/>
+                            <constraint firstItem="D9k-DD-DBd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pnf-ZC-J0j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WSF-0o-Tfy" secondAttribute="bottom" constant="16" id="pv9-Wy-R00"/>
+                            <constraint firstItem="YwC-12-m2y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wHp-hU-hby"/>
+                            <constraint firstItem="hAn-pw-4zd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8L-Yy-uHO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D9k-DD-DBd" secondAttribute="bottom" constant="50" id="zWh-6R-Naw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideDown"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="KiO-wH-boO"/>
+                    <connections>
+                        <outlet property="emailField" destination="ftA-lV-h8S" id="m2C-5q-9WB"/>
+                        <outlet property="loginButton" destination="Krf-KG-AHO" id="vOe-aJ-AET"/>
+                        <outlet property="passwordField" destination="XIg-SW-5eU" id="dRt-Ub-mGZ"/>
+                        <segue destination="aGP-3w-PPv" kind="show" identifier="goToLogFromLogin" id="8wm-fF-cqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1517" y="-469"/>
+        </scene>
+        <!--Register-->
+        <scene sceneID="x28-CH-xno">
+            <objects>
+                <viewController title="Register" modalTransitionStyle="flipHorizontal" id="zu4-LL-dBO" customClass="RegisterViewController" customModule="Hydrator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1N-d1-mK0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="M26-5U-BT1" userLabel="Login Buttons">
+                                <rect key="frame" x="55" y="136" width="304" height="178"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ghm-5E-AV5">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lm3-1I-eGR">
+                                        <rect key="frame" x="0.0" y="48" width="304" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Retype Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RiK-Il-Yb1">
+                                        <rect key="frame" x="0.0" y="96" width="304" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ao-Zz-wOd">
+                                        <rect key="frame" x="0.0" y="144" width="304" height="34"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.78823529410000004" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                        <size key="titleShadowOffset" width="0.0" height="1"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleShadowColor" red="0.27428621050000002" green="0.27338421340000002" blue="0.33139997719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="zu4-LL-dBO" eventType="touchUpInside" id="h2P-ad-ush"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="HYDRATOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="n5o-o9-0Ps">
+                                <rect key="frame" x="123.99999999999999" y="76" width="166.66666666666663" height="48"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="37"/>
+                                <color key="textColor" red="0.95249706509999998" green="0.96466654539999996" blue="0.9728901982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.27428621050000002" green="0.27338421340000002" blue="0.33139997719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1326604187" green="0.72059023379999998" blue="0.83835005760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="M26-5U-BT1" firstAttribute="leading" secondItem="bjL-am-3xG" secondAttribute="leading" constant="55" id="16x-EK-RAr"/>
+                            <constraint firstItem="M26-5U-BT1" firstAttribute="centerX" secondItem="n1N-d1-mK0" secondAttribute="centerX" id="DKz-Uf-VZ3"/>
+                            <constraint firstItem="n5o-o9-0Ps" firstAttribute="top" secondItem="bjL-am-3xG" secondAttribute="top" constant="12" id="H48-Qa-7uG"/>
+                            <constraint firstItem="bjL-am-3xG" firstAttribute="trailing" secondItem="M26-5U-BT1" secondAttribute="trailing" constant="55" id="ZA3-mt-n0a"/>
+                            <constraint firstItem="M26-5U-BT1" firstAttribute="top" secondItem="n5o-o9-0Ps" secondAttribute="bottom" constant="12" id="cod-9G-cof"/>
+                            <constraint firstItem="n5o-o9-0Ps" firstAttribute="centerX" secondItem="n1N-d1-mK0" secondAttribute="centerX" id="eBA-Kj-xtl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bjL-am-3xG"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailField" destination="Ghm-5E-AV5" id="6zB-Gr-9lJ"/>
+                        <outlet property="passwordField" destination="lm3-1I-eGR" id="kdV-DE-4yu"/>
+                        <outlet property="retypePWField" destination="RiK-Il-Yb1" id="TdT-2O-495"/>
+                        <segue destination="aGP-3w-PPv" kind="show" identifier="toLog" id="Oa0-Od-dnD"/>
+                        <segue destination="zpK-Ib-6CX" kind="unwind" identifier="unwindtoViewController1" unwindAction="prepareForUnwindWithSegue:" id="0pr-Ah-gSV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUS-2A-Sku" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zpK-Ib-6CX" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1297.5" y="657.5"/>
+        </scene>
+        <!--Daily Hydration-->
+        <scene sceneID="xHv-1a-dsT">
+            <objects>
+                <viewController id="mno-ma-dq4" customClass="LogViewController" customModule="Hydrator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="klW-ac-jMU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9bt-RN-wEY" userLabel="Bottom">
+                                <rect key="frame" x="0.0" y="184" width="414" height="552"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yaK-Jh-mGs">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="550"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <prototypes>
+                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hydrationLog" id="Ptr-3B-mN1" customClass="HydrationLogTableCell" customModule="Hydrator" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ptr-3B-mN1" id="JT5-pd-bcx">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Zw-Df-xGP" userLabel="Image">
+                                                        <rect key="frame" x="33" y="5" width="34" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="2m5-rv-DiF"/>
+                                                            <constraint firstAttribute="width" constant="34" id="n1Q-bY-nVK"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GsE-Au-2kJ" userLabel="Amount">
+                                                        <rect key="frame" x="267.66666666666669" y="9.3333333333333339" width="50.333333333333314" height="26.666666666666664"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-SQ-UWZ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22.666666666666668" height="26.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nm-ph-FY1">
+                                                                <rect key="frame" x="27.666666666666629" y="0.0" width="22.666666666666671" height="26.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KD-gt-C1p">
+                                                        <rect key="frame" x="103" y="9.3333333333333339" width="40.666666666666657" height="26.666666666666664"/>
+                                                        <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="21"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="1KD-gt-C1p" firstAttribute="centerY" secondItem="JT5-pd-bcx" secondAttribute="centerY" id="72e-1R-ufq"/>
+                                                    <constraint firstItem="7Zw-Df-xGP" firstAttribute="centerY" secondItem="JT5-pd-bcx" secondAttribute="centerY" id="Ike-gY-bKE"/>
+                                                    <constraint firstItem="1KD-gt-C1p" firstAttribute="leading" secondItem="7Zw-Df-xGP" secondAttribute="trailing" constant="36" id="aDn-f0-MIj"/>
+                                                    <constraint firstAttribute="trailing" secondItem="GsE-Au-2kJ" secondAttribute="trailing" constant="96" id="lFr-g1-4K6"/>
+                                                    <constraint firstItem="GsE-Au-2kJ" firstAttribute="centerY" secondItem="JT5-pd-bcx" secondAttribute="centerY" id="mxi-9q-B1R"/>
+                                                    <constraint firstItem="7Zw-Df-xGP" firstAttribute="leading" secondItem="JT5-pd-bcx" secondAttribute="leading" constant="33" id="uOd-Hg-Fjd"/>
+                                                </constraints>
+                                            </tableViewCellContentView>
+                                            <connections>
+                                                <outlet property="hydrationCellImg" destination="7Zw-Df-xGP" id="pDg-o3-sxM"/>
+                                                <outlet property="numericalAmount" destination="KGo-SQ-UWZ" id="uwd-a2-HHs"/>
+                                                <outlet property="typeLabel" destination="1KD-gt-C1p" id="GU2-Ac-Qfy"/>
+                                            </connections>
+                                        </tableViewCell>
+                                    </prototypes>
+                                    <sections/>
+                                </tableView>
+                            </tableView>
+                            <view alpha="0.69999999999999996" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ihE-r8-jvi" userLabel="Top">
+                                <rect key="frame" x="0.0" y="64" width="414" height="120"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="center" spacing="102" translatesAutoresizingMaskIntoConstraints="NO" id="VBD-la-Ovm" userLabel="Infographic">
+                                        <rect key="frame" x="-20.666666666666657" y="15" width="456.33333333333326" height="90"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="MBr-W6-d1Y" userLabel="Left">
+                                                <rect key="frame" x="0.0" y="6" width="78.333333333333329" height="78"/>
+                                                <subviews>
+                                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="IME-3C-VGd" userLabel="Circle Amount" customClass="CircleProgressView" customModule="CircleProgressView">
+                                                        <rect key="frame" x="-0.6666666666666643" y="0.0" width="78.666666666666657" height="78"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="refreshRate">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                                                <real key="value" value="0.0"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="IME-3C-VGd" firstAttribute="top" secondItem="MBr-W6-d1Y" secondAttribute="top" id="9Ux-MZ-CE9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IME-3C-VGd" secondAttribute="trailing" id="Ejy-40-YNS"/>
+                                                    <constraint firstAttribute="height" constant="78" id="IqY-Zw-14f"/>
+                                                    <constraint firstItem="IME-3C-VGd" firstAttribute="leading" secondItem="MBr-W6-d1Y" secondAttribute="leading" id="ONe-Oz-hRu"/>
+                                                    <constraint firstAttribute="width" constant="78" id="SXZ-eP-2YL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IME-3C-VGd" secondAttribute="bottom" id="jVk-Qo-91p"/>
+                                                    <constraint firstItem="IME-3C-VGd" firstAttribute="leading" secondItem="MBr-W6-d1Y" secondAttribute="leading" id="nG2-hp-feG"/>
+                                                    <constraint firstAttribute="bottom" secondItem="IME-3C-VGd" secondAttribute="bottom" id="oVg-WH-hqK"/>
+                                                    <constraint firstItem="IME-3C-VGd" firstAttribute="top" secondItem="MBr-W6-d1Y" secondAttribute="top" id="rz7-f5-jp3"/>
+                                                    <constraint firstAttribute="trailing" secondItem="IME-3C-VGd" secondAttribute="trailing" id="yFs-wt-RMs"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUD-p0-f5g" userLabel="Right">
+                                                <rect key="frame" x="180.33333333333331" y="12" width="276" height="66"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ApA-Li-4pM" userLabel="Numeric Amount">
+                                                        <rect key="frame" x="78.333333333333343" y="9" width="120" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QG7-OS-qEb">
+                                                                <rect key="frame" x="0.0" y="0.6666666666666714" width="39.666666666666664" height="47"/>
+                                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="37"/>
+                                                                <color key="textColor" red="0.2666666667" green="0.78823529410000004" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/64" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uW4-FC-Oi4">
+                                                                <rect key="frame" x="40.666666666666686" y="0.0" width="56.333333333333343" height="48"/>
+                                                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="37"/>
+                                                                <color key="textColor" red="0.2666666667" green="0.78823529410000004" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vue-S1-C5x">
+                                                                <rect key="frame" x="98" y="10.333333333333327" width="22" height="27.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="20"/>
+                                                                <color key="textColor" red="0.2666666667" green="0.78823529410000004" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="0.0" height="-2"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="ApA-Li-4pM" firstAttribute="centerX" secondItem="kUD-p0-f5g" secondAttribute="centerX" id="5sb-uU-qrX"/>
+                                                    <constraint firstItem="ApA-Li-4pM" firstAttribute="centerY" secondItem="kUD-p0-f5g" secondAttribute="centerY" id="MwQ-0y-i9O"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="VBD-la-Ovm" firstAttribute="top" secondItem="ihE-r8-jvi" secondAttribute="top" constant="15" id="0kz-xt-yMc"/>
+                                    <constraint firstItem="VBD-la-Ovm" firstAttribute="centerY" secondItem="ihE-r8-jvi" secondAttribute="centerY" id="68z-bh-STf"/>
+                                    <constraint firstItem="VBD-la-Ovm" firstAttribute="centerX" secondItem="ihE-r8-jvi" secondAttribute="centerX" id="f8m-g9-nJc"/>
+                                    <constraint firstAttribute="height" constant="120" id="fb9-Fb-XjI"/>
+                                    <constraint firstAttribute="bottom" secondItem="VBD-la-Ovm" secondAttribute="bottom" constant="15" id="j66-Zh-v0L"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1326604187" green="0.72059023379999998" blue="0.83835005760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9bt-RN-wEY" firstAttribute="leading" secondItem="gBi-Zu-Q8b" secondAttribute="leading" id="8Fl-UH-jlm"/>
+                            <constraint firstItem="ihE-r8-jvi" firstAttribute="trailing" secondItem="gBi-Zu-Q8b" secondAttribute="trailing" id="Yqp-qf-HL9"/>
+                            <constraint firstItem="ihE-r8-jvi" firstAttribute="top" secondItem="gBi-Zu-Q8b" secondAttribute="top" id="a06-x7-17t"/>
+                            <constraint firstItem="9bt-RN-wEY" firstAttribute="top" secondItem="ihE-r8-jvi" secondAttribute="bottom" id="dtf-qn-OGh"/>
+                            <constraint firstAttribute="bottom" secondItem="9bt-RN-wEY" secondAttribute="bottom" id="nIO-zA-fju"/>
+                            <constraint firstItem="9bt-RN-wEY" firstAttribute="trailing" secondItem="gBi-Zu-Q8b" secondAttribute="trailing" id="sFJ-wW-Iu5"/>
+                            <constraint firstItem="ihE-r8-jvi" firstAttribute="leading" secondItem="gBi-Zu-Q8b" secondAttribute="leading" id="w0I-Nl-nUl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gBi-Zu-Q8b"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Daily Hydration" id="QqC-XC-dbh">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="WTm-OI-gEg">
+                            <color key="tintColor" red="0.249306947" green="0.4413391948" blue="0.70284622910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="signOutPressed:" destination="mno-ma-dq4" id="K30-x8-1IG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="zjk-Oi-cSR">
+                            <color key="tintColor" red="0.249306947" green="0.4413391948" blue="0.70284622910000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addPressed:" destination="mno-ma-dq4" id="9zq-R9-Agp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="hydrationTable" destination="yaK-Jh-mGs" id="QNz-3E-zkI"/>
+                        <outlet property="progressCircle" destination="IME-3C-VGd" id="lIn-ql-Kmv"/>
+                        <outlet property="totalLabel" destination="QG7-OS-qEb" id="grv-xx-Ng6"/>
+                        <segue destination="1my-5Z-ZlI" kind="unwind" identifier="unwindToViewController1" unwindAction="prepareForUnwindWithSegue:" id="VRO-Gc-V9K"/>
+                        <segue destination="1Xy-wU-Nld" kind="show" identifier="toAddVC" id="BYc-9f-6Ys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k1U-f2-YTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="1my-5Z-ZlI" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3486.9565217391305" y="32.608695652173914"/>
+        </scene>
+        <!--Add Log View Controller-->
+        <scene sceneID="NsC-as-UuQ">
+            <objects>
+                <viewController id="1Xy-wU-Nld" customClass="AddLogViewController" customModule="Hydrator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SDY-b5-YAB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Vl-2V-3Xa">
+                                <rect key="frame" x="0.0" y="72" width="414" height="403"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pLd-KL-rXF" userLabel="Type">
+                                        <rect key="frame" x="47" y="0.0" width="320" height="253.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuJ-md-aIg">
+                                                <rect key="frame" x="131.66666666666666" y="0.0" width="57" height="37.666666666666664"/>
+                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU0-NA-mGG">
+                                                <rect key="frame" x="0.0" y="37.666666666666686" width="320" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="WDn-mu-g5C" userLabel="Amount">
+                                        <rect key="frame" x="74" y="254.66666666666669" width="266" height="148.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vFB-Vc-LEE">
+                                                <rect key="frame" x="82" y="0.0" width="102" height="40.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="31"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Pe4-U6-N4I" userLabel="Slider">
+                                                <rect key="frame" x="0.0" y="62.333333333333314" width="266" height="30"/>
+                                                <subviews>
+                                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="6" minValue="0.0" maxValue="32" translatesAutoresizingMaskIntoConstraints="NO" id="RpH-zd-dKN">
+                                                        <rect key="frame" x="-2" y="0.0" width="192.66666666666666" height="31"/>
+                                                        <connections>
+                                                            <action selector="sliderValueChanged:" destination="1Xy-wU-Nld" eventType="valueChanged" id="ggm-HS-jVg"/>
+                                                        </connections>
+                                                    </slider>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="b7B-GA-D9d">
+                                                        <rect key="frame" x="200.66666666666669" y="0.0" width="65.333333333333314" height="30"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="06" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rHK-XY-ADp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="31.333333333333332" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="32" id="mSc-G5-ljr"/>
+                                                                </constraints>
+                                                                <nil key="textColor"/>
+                                                                <fontDescription key="fontDescription" name="Dosis-Light" family="Dosis" pointSize="16"/>
+                                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-UK-ZRQ">
+                                                                <rect key="frame" x="33.333333333333314" y="0.0" width="32" height="30"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="32" id="SH9-u4-9PA"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <size key="shadowOffset" width="0.0" height="2"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="266" id="vKM-RZ-d4d"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VEx-gi-4DV">
+                                                <rect key="frame" x="0.0" y="114.33333333333331" width="266" height="34"/>
+                                                <color key="backgroundColor" red="0.0" green="0.56031829119999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                <state key="normal" title="ADD">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addButtonPressed:" destination="1Xy-wU-Nld" eventType="touchUpInside" id="6pl-UC-qxZ"/>
+                                                    <action selector="registerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Vl-S1-w7h"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VEx-gi-4DV" firstAttribute="leading" secondItem="WDn-mu-g5C" secondAttribute="leading" id="JLk-ko-rjw"/>
+                                            <constraint firstAttribute="trailing" secondItem="VEx-gi-4DV" secondAttribute="trailing" id="stu-Be-HOW"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1326604187" green="0.72059023379999998" blue="0.83835005760000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2Vl-2V-3Xa" firstAttribute="leading" secondItem="SDY-b5-YAB" secondAttribute="leading" id="F4w-Jl-Bc0"/>
+                            <constraint firstAttribute="trailing" secondItem="2Vl-2V-3Xa" secondAttribute="trailing" id="Fle-du-xhV"/>
+                            <constraint firstItem="2Vl-2V-3Xa" firstAttribute="top" secondItem="6iF-fY-9lE" secondAttribute="top" constant="8" id="c9r-Hk-3TS"/>
+                            <constraint firstItem="2Vl-2V-3Xa" firstAttribute="centerX" secondItem="SDY-b5-YAB" secondAttribute="centerX" id="x7M-35-0La"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6iF-fY-9lE"/>
+                    </view>
+                    <connections>
+                        <outlet property="amountSlider" destination="RpH-zd-dKN" id="7rq-Lp-XwM"/>
+                        <outlet property="amountTextfield" destination="rHK-XY-ADp" id="qzy-wo-c55"/>
+                        <outlet property="typePickerView" destination="ZU0-NA-mGG" id="0hK-Lh-3le"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvk-ib-oAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4376.811594202899" y="33.423913043478265"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Vq-m0-Sxe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aGP-3w-PPv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="a9p-Wp-AhY">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="mno-ma-dq4" kind="relationship" relationship="rootViewController" id="zoZ-GL-qHd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Lz-fo-7zN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2676.811594202899" y="32.608695652173914"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iAA-Bk-WKi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRY-Fj-SgV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6ej-zu-1iF">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="2"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Xmp-ec-mT3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zds-4K-eaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="-469"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Github" width="128" height="128"/>
+        <image name="Hydrator Logo" width="256" height="256"/>
+        <image name="Instagram" width="128" height="128"/>
+        <image name="Linkedin" width="128" height="128"/>
+        <image name="Twitter" width="128" height="128"/>
+        <image name="info" width="256" height="256"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Oa0-Od-dnD"/>
+    </inferredMetricsTieBreakers>
+</document>
