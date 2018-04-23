@@ -398,44 +398,64 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Zw-Df-xGP" userLabel="Image">
-                                                        <rect key="frame" x="33" y="5" width="34" height="34"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="34" id="2m5-rv-DiF"/>
-                                                            <constraint firstAttribute="width" constant="34" id="n1Q-bY-nVK"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GsE-Au-2kJ" userLabel="Amount">
-                                                        <rect key="frame" x="267.66666666666669" y="9.3333333333333339" width="50.333333333333314" height="26.666666666666664"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lSU-fa-Pvc">
+                                                        <rect key="frame" x="0.0" y="-3.6666666666666679" width="414" height="51"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-SQ-UWZ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="22.666666666666668" height="26.666666666666668"/>
-                                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OZ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nm-ph-FY1">
-                                                                <rect key="frame" x="27.666666666666629" y="0.0" width="22.666666666666671" height="26.666666666666668"/>
-                                                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QT4-6m-7oI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="51"/>
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Zw-Df-xGP" userLabel="Image">
+                                                                        <rect key="frame" x="46.666666666666657" y="3" width="45" height="45"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="45" id="siQ-a3-Vj5"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="7Zw-Df-xGP" firstAttribute="top" secondItem="QT4-6m-7oI" secondAttribute="top" constant="3" id="4z4-R3-UbI"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="7Zw-Df-xGP" secondAttribute="bottom" constant="3" id="HhR-1R-ha2"/>
+                                                                    <constraint firstItem="7Zw-Df-xGP" firstAttribute="centerY" secondItem="QT4-6m-7oI" secondAttribute="centerY" id="RLV-Lr-YEh"/>
+                                                                    <constraint firstItem="7Zw-Df-xGP" firstAttribute="centerX" secondItem="QT4-6m-7oI" secondAttribute="centerX" id="tNM-Dt-XCA"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GsE-Au-2kJ" userLabel="Amount">
+                                                                <rect key="frame" x="138" y="0.0" width="138" height="51"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGo-SQ-UWZ">
+                                                                        <rect key="frame" x="0.0" y="12.33333333333333" width="66.666666666666671" height="26.666666666666671"/>
+                                                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
+                                                                        <color key="textColor" red="0.1764705882352941" green="0.20392156862745098" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Nm-ph-FY1">
+                                                                        <rect key="frame" x="71.666666666666657" y="12.33333333333333" width="66.333333333333343" height="26.666666666666671"/>
+                                                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="21"/>
+                                                                        <color key="textColor" red="0.1764705882" green="0.20392156859999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KD-gt-C1p">
+                                                                <rect key="frame" x="276" y="0.0" width="138" height="51"/>
+                                                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="21"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="1KD-gt-C1p" firstAttribute="top" secondItem="lSU-fa-Pvc" secondAttribute="top" id="1E1-he-I12"/>
+                                                            <constraint firstAttribute="bottom" secondItem="1KD-gt-C1p" secondAttribute="bottom" id="N1Q-fK-5SB"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QT4-6m-7oI" secondAttribute="bottom" id="Ndc-DV-eUO"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1KD-gt-C1p" secondAttribute="trailing" id="rva-5f-cxl"/>
+                                                            <constraint firstItem="QT4-6m-7oI" firstAttribute="top" secondItem="lSU-fa-Pvc" secondAttribute="top" id="tYR-5w-Xq3"/>
+                                                        </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KD-gt-C1p">
-                                                        <rect key="frame" x="103" y="9.3333333333333339" width="40.666666666666657" height="26.666666666666664"/>
-                                                        <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="21"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="1KD-gt-C1p" firstAttribute="centerY" secondItem="JT5-pd-bcx" secondAttribute="centerY" id="72e-1R-ufq"/>
-                                                    <constraint firstItem="7Zw-Df-xGP" firstAttribute="centerY" secondItem="JT5-pd-bcx" secondAttribute="centerY" id="Ike-gY-bKE"/>
-                                                    <constraint firstItem="1KD-gt-C1p" firstAttribute="leading" secondItem="7Zw-Df-xGP" secondAttribute="trailing" constant="36" id="aDn-f0-MIj"/>
-                                                    <constraint firstAttribute="trailing" secondItem="GsE-Au-2kJ" secondAttribute="trailing" constant="96" id="lFr-g1-4K6"/>
-                                                    <constraint firstItem="GsE-Au-2kJ" firstAttribute="centerY" secondItem="JT5-pd-bcx" secondAttribute="centerY" id="mxi-9q-B1R"/>
-                                                    <constraint firstItem="7Zw-Df-xGP" firstAttribute="leading" secondItem="JT5-pd-bcx" secondAttribute="leading" constant="33" id="uOd-Hg-Fjd"/>
+                                                    <constraint firstItem="lSU-fa-Pvc" firstAttribute="width" secondItem="JT5-pd-bcx" secondAttribute="width" id="L9p-vT-erz"/>
+                                                    <constraint firstItem="lSU-fa-Pvc" firstAttribute="centerY" secondItem="JT5-pd-bcx" secondAttribute="centerY" id="k5x-kx-qB8"/>
+                                                    <constraint firstItem="lSU-fa-Pvc" firstAttribute="centerX" secondItem="JT5-pd-bcx" secondAttribute="centerX" id="oHt-nJ-ze5"/>
                                                 </constraints>
                                             </tableViewCellContentView>
                                             <connections>
